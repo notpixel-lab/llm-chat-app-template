@@ -15,7 +15,7 @@ const MODEL_ID = "@cf/google/gemma-4-26b-a4b-it";
 
 // Default system prompt
 const SYSTEM_PROMPT =
-	"You are a helpful, friendly assistant. Provide concise and accurate responses.";
+	"You are a software engineer. Provide concise and accurate responses.";
 
 export default {
 	/**
@@ -71,7 +71,7 @@ async function handleChatRequest(
 			MODEL_ID,
 			{
 				messages,
-				max_tokens: 1024,
+				max_tokens: 10024,
 				stream: true,
 			},
 			{
